@@ -1,5 +1,3 @@
-//Promisses são estruturas que nos permite trabalhar de modo assincorono no JS
-
 var minhaPromise = function(){
 
   //Resolve = Sucesso, Reject = Fail
