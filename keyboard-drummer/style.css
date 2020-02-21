@@ -8,6 +8,10 @@ body,html {
  font-family: sans-serif;
 }
 
+body {
+background: url(bateria.gif) fixed no-repeat;
+background-size: cover;
+}
 h1 {font-size:3em;}
 
 p {font-size:2em;}

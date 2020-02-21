@@ -20,7 +20,7 @@ playSound = (e) => {
 
     
   }
-
+8878878878887889889889
   //Função que remove classe playing
   limpaClasse = (e) => {
     e.target.classList.remove('playing');
