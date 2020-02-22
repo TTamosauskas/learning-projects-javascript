@@ -11,4 +11,4 @@ console.log(`O usuário ${usuario} possui ${idade} anos`);
 
 //Observer:
 //1. Uso de crase ` em vez de aspas
-//2.uso de ${variavel} em vez de concatenação
+//2. Uso de ${variavel} em vez de concatenação
