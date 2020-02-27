@@ -57,6 +57,7 @@ p {font-size:2em;}
 
   body {
     background-size: 100% 70% !important;
+    background-position: bottom;
   }
 
   h1 {font-size:3em !important;}
