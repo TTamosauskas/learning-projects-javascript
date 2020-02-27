@@ -49,17 +49,17 @@ p {font-size:2em;}
   box-shadow: 0 0 1rem #ffc600;
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
 
   body, html {
-    font-size: 18px !important;
+    font-size: 13px !important;
   }
 
   body {
     background-size: 100% 70% !important;
   }
 
-  h1 {font-size:4em !important;}
+  h1 {font-size:3em !important;}
 
   p {display:none !important;}
 
