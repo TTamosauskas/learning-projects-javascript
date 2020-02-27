@@ -7,7 +7,7 @@ tocaTecla = (e) => {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 
     //Chama função sonora
-    TocaSom(key, audio);
+    TocaVinheta(key, audio);
 
   }
 
@@ -20,10 +20,10 @@ tocaBotao = (e) => {
     const audio = document.querySelector(`audio[data-key="${e}"]`);
 
     //Chama função sonora
-    TocaSom(key, audio);
+    TocaVinheta(key, audio);
 }
 
-TocaSom = (key, audio) => {
+TocaVinheta = (key, audio) => {
 
   // se audio não existir encerra iteração
   if (!audio) return;
