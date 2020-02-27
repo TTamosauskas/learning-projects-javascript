@@ -60,7 +60,7 @@ p {font-size:2em;}
     background-position: bottom;
   }
 
-  h1 {font-size:2.5em !important;}
+  h1 {font-size:2em !important;}
 
   p {display:none !important;}
 
@@ -69,7 +69,7 @@ p {font-size:2em;}
 }
 
 .key {
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
   width: 24%;
 }
 
