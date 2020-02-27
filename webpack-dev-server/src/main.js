@@ -1,4 +1,13 @@
-alert("ola");
+//Importa default de functions e renomeia para ClasseUsuario
+import ClasseUsuario from './functions'
+
+//Importa idade de functions e renomeia para idadeUsuario
+import {idade as IdadeUsuario} from './functions'
+
+ClasseUsuario.info();
+
+alert(IdadeUsuario);
+
 
 // Para exportacoes usando export default
 // import novoNome from './function'
