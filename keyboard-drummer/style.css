@@ -49,3 +49,22 @@ p {font-size:2em;}
   box-shadow: 0 0 1rem #ffc600;
 }
 
+@media screen and (min-width: 600px) {
+
+  body, html {
+    font-size: 18px !important;
+  }
+
+  h1 {font-size:4em;}
+
+  p {display:none;}
+
+.keys {
+  width: 100% !important;
+}
+
+.key {
+  padding: 6rem .5rem !important;
+}
+
+}
