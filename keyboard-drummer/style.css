@@ -49,19 +49,19 @@ p {font-size:2em;}
   box-shadow: 0 0 1rem #ffc600;
 }
 
-@media screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
 
   body, html {
     font-size: 18px !important;
   }
 
   body {
-    background-size: 100% 70%;
+    background-size: 100% 70% !important;
   }
 
-  h1 {font-size:4em;}
+  h1 {font-size:4em !important;}
 
-  p {display:none;}
+  p {display:none !important;}
 
 .keys {
   width: 100% !important;
