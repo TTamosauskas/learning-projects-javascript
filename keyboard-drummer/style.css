@@ -55,6 +55,10 @@ p {font-size:2em;}
     font-size: 18px !important;
   }
 
+  body {
+    background-size: 100% 70%;
+  }
+
   h1 {font-size:4em;}
 
   p {display:none;}
