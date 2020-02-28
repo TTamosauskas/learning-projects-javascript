@@ -1,25 +1,18 @@
-const minhaPromise = () => new Promise((resolve, reject) => {
-setTimeout(() => { resolve("OK") }, 2000);
-});
+// Função delay de 1s
+const delay = () => new Promise(resolve => setTimeout(resolve, 1000));
 
-// A função executaPromise será executada assim que...
-async function executaPromise() {
-// a função minhaPromise enviar um retorno..
-const response = await minhaPromise();
-console.log(response);
+//Inicia função assincrona
+async function umPorSegundo() {
 
-console.log(await minhaPromise())
+//define await para função delay()  
+ const response = await delay();
+ console.log('1s');
 
-// depois que a primeira await for executada as demais seguem...
-const response2 = await minhaPromise();
-console.log(response2);
-}
+//Apenas apos as linhas acima serem executadas as de baixo serão.
+ const response2 = await delay();
+ console.log('2s');
+ const response3 = await delay();
+ console.log('3s');
+ };
 
-// Mesma coisa usando arrow function
-// const executaPromise = async () =>{
-//   const response = await minhaPromise();
-//   console.log(response);
-//   }
-  
-
-executaPromise();
+umPorSegundo();
