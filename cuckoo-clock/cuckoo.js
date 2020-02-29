@@ -3,6 +3,7 @@ const secondHand = document.querySelector('.second-hand');
   const hourHand = document.querySelector('.hour-hand');
 
   function setDate() {
+
     const now = new Date();
 
     const seconds = now.getSeconds();
@@ -18,16 +19,29 @@ const secondHand = document.querySelector('.second-hand');
     hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 
     
-    
+  
+   
     if(seconds==0){
-      alert("Cuckoo!!")
       cuckoo.play();
-      // 
-      // cuckoo.currentTime = 0;
+
+       cuckoo.play();
+       
+
+       var a=0;
+       cuckoo.onended = function() {
+        a=a+1;
+        if(a!=hour)
+        {
+          cuckoo.play();
+         }
+     };
+
+    
+     
     };
   }
 
 
   setInterval(setDate, 1000);
-
+  alert("Cuckoo!!")
   setDate();
