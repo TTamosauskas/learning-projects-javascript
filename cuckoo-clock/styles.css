@@ -32,12 +32,16 @@
       BACKGROUND-POSITION: 50%;
     }
 
-    .door {background:#000;
+    .door {
       transform-origin: left;
   transition: all 0.5s ease-in-out;
   TOP: 0;
   LEFT: 0;
   MARGIN-LEFT: 0;
+  background: #000 url(door.png);
+  background-size: 110% 106%;
+  background-position: -9px -9px;
+  filter: brightness(22%);
 }
 
   .doorOpen
