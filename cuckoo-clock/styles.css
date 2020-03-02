@@ -1,9 +1,9 @@
  html {
-      background: #000 url(./backgroound.png);
-      background-position:top center;
+  
       font-family: 'helvetica neue';
       text-align: center;
       font-size: 10px;
+
     }
 
     body {
@@ -12,9 +12,18 @@
       display: flex;
       flex: 1;
       min-height: 100vh;
-      align-items: center;
-      display: flex;
-      flex-direction: row;
+      align-items: flex-start;
+      background: #000;
+
+
+    }
+
+    .wrap {
+      background: #000 url(./backgroound.png);
+      filter: brightness(2.4);
+      background-position:top center;
+      width:100%;
+
     }
 
     #bird, .door{
@@ -65,7 +74,7 @@
         background:#201c17 url(./clockwhands.jpg);
         background-position:top center;
         background-size: 100%;
-        filter:sepia(100%);
+        filter:sepia(100%) brightness(0.4);
     }
 
     .clock-face {
@@ -85,4 +94,15 @@
       transform: rotate(90deg);
       transition: all 0.05s;
       transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    }
+
+
+    @media all and (max-width: 600px) {
+      
+      #bird {margin-left: -68px !important;}
+
+      .clock {
+        padding:0;
+        border:5px solid #311210;
+    
     }
