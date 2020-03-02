@@ -108,4 +108,10 @@
         margin-top: 306px;
         }
       }
+
+      @media all and (max-width: 330px) {
+      .clock {
+      width:100%;
+      }
+      }
     
