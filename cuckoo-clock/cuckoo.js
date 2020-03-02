@@ -23,13 +23,14 @@ const secondHand = document.querySelector('.second-hand');
    
     if(mins==0 && seconds==0){
       cuckoo.play();
+      document.querySelector(".door").classList.toggle("doorOpen");
        var cucada=0;
        cuckoo.onended = function() {
         cucada=cucada+1;
         if(cucada!=hour)
         {
           cuckoo.play();
-         }
+         }else{document.querySelector(".door").classList.toggle("doorOpen");}
      };
 
     

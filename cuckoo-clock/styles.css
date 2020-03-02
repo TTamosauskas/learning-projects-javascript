@@ -13,7 +13,38 @@
       flex: 1;
       min-height: 100vh;
       align-items: center;
+      display: flex;
+      flex-direction: row;
     }
+
+    #bird, .door{
+    
+      border-radius: 50% 50% 0 0;
+      width: 18rem;
+      height: 24rem;
+      position: absolute;
+      top:18px;
+      left:46%;
+      margin-left: -46px;
+      background: #000 url(bird.png);
+      BACKGROUND-SIZE: 100%;
+      background-repeat: no-repeat;
+      BACKGROUND-POSITION: 50%;
+    }
+
+    .door {background:#000;
+      transform-origin: left;
+  transition: all 0.5s ease-in-out;
+  TOP: 0;
+  LEFT: 0;
+  MARGIN-LEFT: 0;
+}
+
+  .doorOpen
+{
+  /*prespectiv creates the door open effect*/
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}
 
     .clock {
       width: 35rem;
