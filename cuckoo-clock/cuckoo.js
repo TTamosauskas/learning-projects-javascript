@@ -21,16 +21,12 @@ const secondHand = document.querySelector('.second-hand');
     
   
    
-    if(seconds==0){
+    if(mins==0 && seconds==0){
       cuckoo.play();
-
-       cuckoo.play();
-       
-
-       var a=0;
+       var cucada=0;
        cuckoo.onended = function() {
-        a=a+1;
-        if(a!=hour)
+        cucada=cucada+1;
+        if(cucada!=hour)
         {
           cuckoo.play();
          }
