@@ -73,6 +73,7 @@
         0 0 10px rgba(0,0,0,0.2);
         background:#201c17 url(./clockwhands.jpg);
         background-position:top center;
+        background-repeat:no-repeat;
         background-size: 100%;
         filter:sepia(100%) brightness(0.4);
     }
