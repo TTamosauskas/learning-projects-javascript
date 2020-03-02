@@ -104,5 +104,20 @@
       .clock {
         padding:0;
         border:5px solid #311210;
+        margin-top: 306px;
+        }
+
+    @media all and (max-width: 360px) {
+      
+
+      .clock {
+        margin-top: 286px;
+        width: 100%;
+    }
+
+    @media all and (max-width: 320px) {
+      
+      .clock {
+        margin-top: 255px;
     
     }
