@@ -119,6 +119,7 @@
     @media all and (max-width: 320px) {
       
       .clock {
-        margin-top: 255px;
+        margin-top: 325px;
+        height: 323px;
     
     }
