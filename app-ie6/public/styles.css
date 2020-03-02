@@ -1,0 +1,27 @@
+body {
+  font-family:sans-serif;
+}
+
+ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+li {
+  clear:both;
+  margin-top:20px;
+}
+
+img {
+  float:left;
+  width:80px;
+  margin-right:10px;
+}
+
+strong {font-size:20px;}
+
+p {margin:5px 0;}
+
+a{color:#000;}
+
