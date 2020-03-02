@@ -19,7 +19,7 @@ const secondHand = document.querySelector('.second-hand');
     const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
     hourHand.style.transform = `rotate(${hourDegrees}deg)`;
    
-    if(seconds==0){
+    if(mins==0 && seconds==0){
      
       cuckoo.play();
       document.querySelector(".door").classList.toggle("doorOpen");
