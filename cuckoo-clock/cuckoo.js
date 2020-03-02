@@ -27,11 +27,9 @@ const secondHand = document.querySelector('.second-hand');
       var badalada = hour;
       if(hour>12){ badalada=badalada-12; }else{}
 
-   
-
+  
        cuckoo.onended = function() {
         cucada=cucada+1;
-
         
 
         if(cucada!=badalada)
