@@ -9,7 +9,8 @@ const secondHand = document.querySelector('.second-hand');
     const seconds = now.getSeconds();
     const secondsDegrees = ((seconds / 60) * 360) + 90;
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
-
+  
+    
     const mins = now.getMinutes();
     const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90;
     minsHand.style.transform = `rotate(${minsDegrees}deg)`;
@@ -17,17 +18,21 @@ const secondHand = document.querySelector('.second-hand');
     const hour = now.getHours();
     const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
     hourHand.style.transform = `rotate(${hourDegrees}deg)`;
-
-    
-  
    
     if(mins==0 && seconds==0){
+     
       cuckoo.play();
       document.querySelector(".door").classList.toggle("doorOpen");
-       var cucada=0;
+      var cucada=0;
+      var badalada = hour;
+      if(hour>12){ badalada=badalada-12; }else{}
+
+  
        cuckoo.onended = function() {
         cucada=cucada+1;
-        if(cucada!=hour)
+        
+
+        if(cucada!=badalada)
         {
           cuckoo.play();
          }else{document.querySelector(".door").classList.toggle("doorOpen");}
@@ -40,5 +45,5 @@ const secondHand = document.querySelector('.second-hand');
 
 
   setInterval(setDate, 1000);
-  alert("Cuckoo!!")
+  alert("O Cuco cantará a horas a cada hora completa.")
   setDate();
