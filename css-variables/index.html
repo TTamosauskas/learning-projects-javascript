@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Variaveis CSS</title>
+</head>
+<body>
+  <h1>Atualiza o CSS de maneira dinâmica</h1>
+
+  <div class="controls">
+    <label for="spacing">Padding:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+    <label for="base">Cor</label>
+    <input id="base" type="color" name="base" value="#ffc600">
+  </div>
+<p>
+  <img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Sharbat_Gula.jpg">
+</p>
+
+
+  <style>
+    :root {
+      --base: #ffc600;
+      --spacing: 10px;
+      --blur: 10px;
+    }
+
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
+    .hl {
+      color: var(--base);
+    }
+
+  </style>
+
+<script src="./css-variables.js"></script>
+
+
+</body>
+</html>
