@@ -1,7 +1,21 @@
 
-var array = [0,1,2,3,4,5,6,7,8,9,10]
+var array = [0,10, 1,2,3,4,5,6,7,8,9]
 
 // Todos os metodos aqui usam arrow function por serem ES6+
+
+// .sort serve para ordenar um array:
+
+arrayNovo = array.sort((a, b) => a - b);
+
+console.log("Resultado do .map: " + arrayNovo)
+
+// Todos os metodos aqui usam arrow function por serem ES6+
+
+// .sort serve para ordenar um array:
+
+arrayNovo = array.sort((a, b) => a + b);
+
+console.log("Resultado do .map: " + arrayNovo)
 
 
 // .map serve para percorrer um array e modificar seus itens:
@@ -32,3 +46,4 @@ console.log("Resultado do .find: " + find)
 const findIndex = array.findIndex((item) => item === 7)
 
 console.log("Resultado do .findIndex: " + findIndex)
+
